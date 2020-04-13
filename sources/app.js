@@ -19,4 +19,8 @@ export default class App extends JetApp{
 	}
 }
 
-export {App};
+const afterRender = function () {
+	webix.$$("$button1").hide();
+};
+
+export {App, afterRender};

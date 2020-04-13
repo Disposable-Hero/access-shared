@@ -19,7 +19,7 @@
 				webix.CustomScroll.init();
 
 			const app = new ladondateifreigabe.App();
-			app.render(document.body);
+			app.render(document.body).then(ladondateifreigabe.afterRender);
 		});
 	</script>
 </head>

@@ -4,9 +4,12 @@ export default class StartView extends JetView{
 	config(){
 		return {
 			rows:[
-				{ type:"header", template:"Dashboard"},
-				/*wjet::Settings*/
-				{ template:"Place main app's stats here", borderless:true }
+				{
+					view: "filemanager",
+					id: "fm",
+					url: "https://docs.webix.com/filemanager-backend/"
+					// url: "http://dev.mind-consulting.de:3200/",
+				}
 			]
 		}
 	}

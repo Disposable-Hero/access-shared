@@ -39,19 +39,11 @@ export default class TopView extends JetView{
 		return {
 			rows: [
 				header,
-				{
-					view: "filemanager",
-					id: "fm",
-					mode: "cards",
-					path: "/Freigabe/",
-					url: "https://docs.webix.com/filemanager-backend/"
-					// url: "http://dev.mind-consulting.de:3200/",
-					// override: new Map([[fileManager.services.Backend, CustomBackend]]),
-				}]
-				};
+				{$subview: true}
+				]
+		};
 	}
 
 	init(){
-
 	}
 }
